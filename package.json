@@ -5,9 +5,13 @@
   "repository": "git@github.com:LuizKrlz/facebook-react-interface.git",
   "author": "luizkrlz <luiz.correa.dev@gmail.com>",
   "license": "MIT",
+  "engines": {
+    "node": "10.16.3"
+  },
   "scripts": {
     "dev": "webpack-dev-server src/index.js",
-    "build": "webpack --mode development"
+    "build": "webpack --mode development",
+    "build:production": "webpack --mode production"
   },
   "devDependencies": {
     "@babel/core": "^7.6.0",
@@ -30,6 +34,9 @@
     "webpack-dev-server": "^3.8.0"
   },
   "dependencies": {
+    "express": "^4.17.1",
+    "express-favicon": "^2.0.1",
+    "path": "^0.12.7",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
